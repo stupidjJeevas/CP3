@@ -1,0 +1,7 @@
+A = "Andrey"
+B = "Bragin"
+date = 2004 
+print(A,B,date)
+A,B = B,A
+date +=60
+print(A,B,date)

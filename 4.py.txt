@@ -1,0 +1,12 @@
+time_view = int(input('годы, когда посетитель будет просматривать экспонаты:'))
+
+print('кол-во просмотренных экспонатов:', time_view * 365 * 8 * 60 //5)
+
+vkusno = int(input('кол-во экспонатов, которые стоит глянуть:'))
+all_min = vkusno * 5
+dayz = all_min // 480
+all_min -= dayz * 480
+years = dayz // 365
+dayz %= 365
+print(years, 'years',  dayz,'days', all_min, 'mins')
+
